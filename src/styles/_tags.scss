@@ -1,0 +1,72 @@
+.tags__input__container {
+    display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	min-height: 48px;
+    max-height: 100px;
+	width: 480px;
+	padding: 0 8px;
+	border: 2px solid rgb(214, 216, 218);
+	border-radius: 6px;
+    overflow: scroll;
+
+    &:focus-within {
+        border-color: rgb(1, 98, 209);
+
+        &::after{
+            content: 'Enter tags';
+            color: rgb(1, 98, 209);
+            position: absolute;
+            top: -10px;
+            font-size: 14px;
+            left: 10px;
+            background: #fff;
+            padding: 0 10px;
+        }
+    }
+}
+
+.input {
+    flex: 1;
+    border: none;
+    height: 46px;
+    font-size: 14px;
+    padding: 4px 0 0 0;
+
+    &:focus {
+        outline: transparent;
+    }
+}
+
+.tag__single {
+    width: auto;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	padding: 0 8px;
+	font-size: 14px;
+	list-style: none;
+	border-radius: 6px;
+	margin: 8px 8px 8px 0;
+	background: #0052cc;
+}
+
+.tag__title {
+    margin-top: 3px;
+}
+
+.tag__icon-close {
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 8px;
+    color: #0052cc;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}

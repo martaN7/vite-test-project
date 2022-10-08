@@ -1,6 +1,50 @@
 @import "./variables";
+@import './tags';
 
+.editor {
+    width: 500px;
+    // height: 500px;
+}
 
-h1 {
-    color: $color-primary;
+.ql-size-small{
+    font-size: 0.8rem;
+}
+
+.ql-size-large{
+    font-size: 1.5rem;
+}
+
+.ql-size-huge{
+    font-size: 2rem;
+}
+
+.ql-indent-{
+    &1 {
+        text-indent: 3rem;
+    }
+
+    &2 {
+        text-indent: 6rem;
+    }
+
+    &3 {
+        text-indent: 9rem;
+    }
+
+    &4 {
+        text-indent: 12rem;
+    }
+
+    &5 {
+        text-indent: 15rem;
+    }
+    &6 {
+        text-indent: 18rem;
+    }
+    &7 {
+        text-indent: 21rem;
+    }
+    &8 {
+        text-indent: 24rem;
+    }
 }
