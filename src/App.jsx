@@ -14,11 +14,11 @@ function App() {
   const [value, setValue] = useState('');
   const [text, setText] = useState('');
 
-  const editorRef = useRef();
+  // const editorRef = useRef();
 
   useEffect(() => {
     console.log("renderuję się");
-    console.log(editorRef.current);
+    // console.log(editorRef.current.value);
   });
   
   const  modules  = {
@@ -46,12 +46,12 @@ const displayText = () => {
     <div>
       {/* {console.log(value)} */}
       <h1>Testing React Quill</h1>
-      <ReactQuill theme="snow" modules={modules} ref={editorRef} placeholder='Napiszże coś' className='editor' />
+      <ReactQuill theme="snow" modules={modules} value={value} onChange={setValue} placeholder='Napiszże coś' className='editor' />
       {/* <div dangerouslySetInnerHTML={{ __html: value}}>
       </div> */}
       <button onClick={displayText}>Display text</button>
-      <div dangerouslySetInnerHTML={{ __html: editorRef.current}}></div>
-      <div>{editorRef.current}</div>
+      <div dangerouslySetInnerHTML={{ __html: value}}></div>
+      <div>{value}</div>
       <h1>Enter some tags</h1>
       <Tags tags={['Nodejs', 'MongoDB']}/>
     </div>
