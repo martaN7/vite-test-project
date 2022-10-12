@@ -50,8 +50,8 @@ const displayText = () => {
       {/* <div dangerouslySetInnerHTML={{ __html: value}}>
       </div> */}
       <button onClick={displayText}>Display text</button>
-      <div dangerouslySetInnerHTML={{ __html: value}}></div>
-      <div>{value}</div>
+      <div className='display__entry ql-editor' dangerouslySetInnerHTML={{ __html: text}}></div>
+      <div>{text}</div>
       <h1>Enter some tags</h1>
       <Tags tags={['Nodejs', 'MongoDB']}/>
     </div>
